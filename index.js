@@ -183,7 +183,7 @@ function gameOver(){
     row.forEach(function(entry){
       if(entry.classList.contains("mine")){
         entry.style.background="red";
-        entry.innerHTML="<img src=mine.png>";
+        entry.innerHTML="<img src=Mine.png>";
       }
     });
   });
