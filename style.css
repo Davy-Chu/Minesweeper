@@ -75,7 +75,6 @@ img{
   margin-top: 0;
   padding: 0; 
   width:30vw;
-  background-color: #f3ca88;
   overflow: hidden;
   top: 50%;
   left: 50%;
@@ -83,7 +82,7 @@ img{
   text-align: center;
   z-index: 1;
   position: absolute;
-  transform: translate(-50%, -100%);
+  transform: translate(-51%, -100%);
 /*   background-color: white; /* Fallback color */ 
 }
 .death-text{
