@@ -191,7 +191,7 @@ function gameOver(){
 //if win
 function gameWin(){
   clearInterval(timer);
-  let congratulations = new Audio("crowd_small_chil_ec049202_9klCwI6.mp3");
+  let congratulations = new Audio("Win.mp3");
   congratulations.play();
   pop = document.getElementById("win");
   pop.style.display = "block";
