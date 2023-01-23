@@ -1,0 +1,108 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: trebuchet ms;
+  background-color: #9DF9EF;
+  overflow:hidden;
+}
+h1{
+   display:flex;
+   justify-content: center;
+}
+button{
+  background-color:#bec4bf;
+  color:black;
+  border-radius:8px;
+  border-color:white;
+  cursor: pointer;
+}
+img{
+  width: 2.6vw;
+  height:3.5vh;
+}
+.bg {
+  border: 0000000.1px solid white;
+  background-image: url("background.jpg");
+  height: 100vh; 
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}  
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+#timerLabel{
+  display:flex; 
+  justify-content: center;
+  text-align: center;
+}
+#timer{
+  border:red;
+  display:flex; 
+  justify-content: center;
+  text-align: center;
+}
+
+.grid{
+  width: 38.2vw;
+  height: 54.6vh;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid div{
+  display:block;
+  text-align:center;
+  background-color: lightgray;
+  border-radius:2px;
+  border-color:white;
+  width: 3.645vw;
+  height: 6.5vh;
+  border: 1.1px solid black;
+  font-weight: bold;
+  font-size: 3vw;
+  font-family: roboto;
+}
+.popup{
+  height:auto;
+/*   height:150px; */
+  opacity: 90%;
+  margin-bottom: 0; 
+  margin-top: 0;
+  padding: 0; 
+  width:30vw;
+  background-color: #f3ca88;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  display:none;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  transform: translate(-50%, -100%);
+/*   background-color: white; /* Fallback color */ 
+}
+.death-text{
+  margin: 0;
+  padding: 0;
+  height:150px;
+  outline: beige solid;
+  background-color: #9DF9EF;
+  text-align: center;
+  border-radius:20px;
+}
+.win-text{
+  margin: 0;
+  padding: 0;
+  height:150px;
+  outline: beige solid;
+  background-color: #9DF9EF;
+  text-align: center;
+  border-radius:20px;
+}
+/*<a href="https://www.freepik.com/free-vector/blank-meadow-landscape-scene_16457376.htm#query=cartoon%20background&position=0&from_view=keyword">Image by brgfx</a> on Freepik
+*/
