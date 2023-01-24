@@ -1,107 +1,120 @@
-body, html{
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
   font-family: trebuchet ms;
-  background-color: #9DF9EF;
-  overflow:hidden;
+  background-color: #9df9ef;
+  overflow: hidden;
 }
-h1{
-   display:flex;
-   justify-content: center;
+h1 {
+  display: flex;
+  justify-content: center;
 }
-button{
-  background-color:#bec4bf;
-  color:black;
-  border-radius:8px;
-  border-color:white;
+button {
+  background-color: #bec4bf;
+  color: black;
+  border-radius: 8px;
+  border-color: white;
   cursor: pointer;
 }
-img{
-  width: 2.6vw;
-  height:3.5vh;
+img {
+  width: 100%;
+  align-self: center;
+  justify-self: center;
 }
 .bg {
   border: 0000000.1px solid white;
   background-image: url("background.jpg");
-  height: 100vh; 
+  height: 100vh;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}  
+}
 .break {
   flex-basis: 100%;
   height: 0;
 }
-#timerLabel{
-  display:flex; 
+#timerLabel {
+  display: flex;
   justify-content: center;
   text-align: center;
 }
-#timer{
-  border:red;
-  display:flex; 
+#timer {
+  border: red;
+  display: flex;
   justify-content: center;
   text-align: center;
 }
 
-.grid{
-  width: 38.2vw;
-  height: 54vh;
+.grid {
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
 }
-.grid div{
-  display:block;
-  text-align:center;
+
+.grid div {
+  width: 1.3em;
+  height: 1.3em;
+  max-height: 80px;
+  max-width: 80px;
+
+  display: block;
+  text-align: center;
   background-color: lightgray;
-  border-radius:2px;
-  border-color:white;
-  width: 3.645vw;
-  height: 6.5vh;
+  border-radius: 2px;
+  border-color: white;
+  box-sizing: border-box;
   border: 1.1px solid black;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 3em;
+  font-family: roboto, sans-serif;
   font-weight: bold;
-  font-size: 3vw;
-  font-family: roboto;
 }
-.popup{
-  height:auto;
-/*   height:150px; */
+
+.popup {
+  height: auto;
+  /*   height:150px; */
   opacity: 90%;
-  margin-bottom: 0; 
+  margin-bottom: 0;
   margin-top: 0;
-  padding: 0; 
-  width:30vw;
+  padding: 0;
+  width: 30vw;
   overflow: hidden;
   top: 50%;
   left: 50%;
-  display:none;
+  display: none;
   text-align: center;
   z-index: 1;
   position: absolute;
   transform: translate(-51%, -100%);
-/*   background-color: white; /* Fallback color */ 
+  /*   background-color: white; /* Fallback color */
 }
-.death-text{
+.death-text {
   margin: 0;
   padding: 0;
-  height:150px;
+  height: 150px;
   outline: beige solid;
-  background-color: #9DF9EF;
+  background-color: #9df9ef;
   text-align: center;
-  border-radius:20px;
+  border-radius: 20px;
 }
-.win-text{
+.win-text {
   margin: 0;
   padding: 0;
-  height:150px;
+  height: 150px;
   outline: beige solid;
-  background-color: #9DF9EF;
+  background-color: #9df9ef;
   text-align: center;
-  border-radius:20px;
+  border-radius: 20px;
 }
 /*<a href="https://www.freepik.com/free-vector/blank-meadow-landscape-scene_16457376.htm#query=cartoon%20background&position=0&from_view=keyword">Image by brgfx</a> on Freepik
 */
