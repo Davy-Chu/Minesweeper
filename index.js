@@ -174,7 +174,7 @@ function restart(){
 //if game lost
 function gameOver(){
   gg = true;
-  let boom = new Audio("vine-boom.mp3");
+  let boom = new Audio("boom.mp3");
   boom.play();
   clearInterval(timer);
   pop =  document.getElementById("death");
@@ -199,7 +199,7 @@ function gameWin(){
     row.forEach(function(entry){
       if(entry.classList.contains("mine")){
         entry.style.background="silver";
-        entry.innerHTML="<img src=mine.png>";
+        entry.innerHTML="<img src=Mine.png>";
       }
     });
   });
