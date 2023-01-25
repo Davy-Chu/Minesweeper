@@ -5,8 +5,8 @@ let score = 0, adj = 0, tiles = 70, mines = 10,rows = 8, cols = 10;
 let board = new Array(rows);
 let isStart = false, gg = false;
 // Key notes:"mine" = mine | 0-8 = number of mines adjacent
-// mine = gg
-//nothing/flag = bfs
+// mine = gameoever
+//nothing = bfs
 //adjacent mines = number
 function createBoard() {//traverse all adjacent squares until border is reached or surrounded by mine adjacent squares
   for (let i = 0; i < rows; i++){
@@ -19,7 +19,7 @@ function createBoard() {//traverse all adjacent squares until border is reached 
       //making squares
       div.addEventListener("click", function(){
         explore(i,y);
-        if(tiles <= 0){//game win condition
+        if(tiles <= 0 && !gg){//game win condition
           gameWin();
         }
       });
@@ -190,6 +190,7 @@ function gameOver(){
 }
 //if win
 function gameWin(){
+  gg = true;
   clearInterval(timer);
   let congratulations = new Audio("Win.mp3");
   congratulations.play();
